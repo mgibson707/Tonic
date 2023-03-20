@@ -65,6 +65,7 @@ extension Pitch: IntRepresentable {
     }
 
     public init(intValue: Int) {
+        // clamps to safe high or low value
         midiNoteNumber = Int8(truncateToFit: intValue)
     }
 }
