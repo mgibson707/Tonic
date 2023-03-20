@@ -65,7 +65,7 @@ extension Pitch: IntRepresentable {
     }
 
     public init(intValue: Int) {
-        midiNoteNumber = Int8(intValue)
+        midiNoteNumber = Int8(truncateToFit: intValue)
     }
 }
 

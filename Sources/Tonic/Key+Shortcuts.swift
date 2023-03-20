@@ -2,6 +2,13 @@
 
 import Foundation
 
+extension Key: CustomStringConvertible {
+    /// String representation of the note class
+    public var description: String {
+        return "\(root.description) \(scale.description)"
+    }
+}
+
 public extension Key {
     // MARK: - Major keys
 
